@@ -14,17 +14,18 @@
 
 body {
     font-family: gotham-bold;
+    font-weight: normal;
+    margin: 0;
 }
 
 /**** header and nav **********************/
 
 header {
     background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07bcd69444b1da123c309e5f4485371b&auto=format&fit=crop&w=1950&q=80");
-    background-color: rgba(29, 41, 47, .5);
+    background-color: rgba(105, 97, 51, 0.6);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 50vh;
-    margin: 0;
+    height: 35vw;
     background-position: center;
     text-align: center;
     color: white;
@@ -37,9 +38,9 @@ header {
 }
 
 .icon {
-    background-color: rgb(241, 206, 91);
-    width: 6%;
+    width: 8%;
     margin: 1%;
+    font-size: 1.5vw;
 }
 
 .header-links {
@@ -56,22 +57,22 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     width: 3.5%;
-    border: solid rgb(29, 41, 47) 5px;
-    background-color: rgb(29, 41, 47);
+    border: solid rgb(29, 41, 47) .25vw;
 }
 
 .headline {
     font-family: gotham-med;
     text-transform: uppercase;
     font-size: 5vw;
-    margin: 0;
+    margin: 2% auto;
 }
 
 header p {
     font-family: avenir-next;
-    font-size: 18pt;
-    width: 80%;
-    margin: 3% auto;
+    font-size: 2.25vw;
+    line-height: 3vw;
+    width: 68%;
+    margin: 1.5% auto;
 }
 
 
@@ -85,19 +86,21 @@ header p {
     grid-row-gap: 1.5%;
     width: 95%;
     margin: 2.5%;
+    text-transform: uppercase;
 }
   
-.galCell {
+.galCell, .galCell-left {
     height: 20vw;
     text-align: center;
+    font-size: 1.5vw;
 }
   
 #galleryCell-1 {
     display: flex;
     grid-row: 1 / 3;
-    background-color: rgb(29, 41, 47);
-    color: white;
     align-items: center;
+    font-size: 2.5vw;
+    padding: 15%;    
 }
   
 #galleryCell-2 {
@@ -142,36 +145,65 @@ header p {
   
 #galleryCell-10 {
     display: flex;
-    background-color: rgb(241, 206, 91);
     grid-column: 3;
     grid-row: 3 / 5;
     align-items: center;
+    font-size: 2.3vw;
+    padding: 15%;
 }
   
-.galCell p {
-    background-color: lightgray;
+.galCell p, .galCell-left p {
     width: 45%;
-    padding: 1%;
-    float: right;
+    padding: 2%;
     margin: 0;
+}
+
+.galCell p {
+    float: right;
+}
+
+.galCell-left p {
+    float: left;
+}
+
+/****colors**************************/
+
+.primary {
+    background-color: rgb(29, 41, 47);
+    color:  lightgray;
+}
+
+.primary2 {
+    background-color: black;
+    color:  rgb(241, 206, 91);
+}
+
+.secondary {
+    background-color:  rgb(241, 206, 91);
+    color:  black;
+}
+
+.third {
+    background-color: lightgray;
+    color:  rgb(29, 41, 47);
 }
 
 /**** footer **********************/
 
 footer {
     font-family: gotham-med;
-    background-color: rgb(29, 41, 47);
     width: 100%;
-    height: 20vh;
+    height: 18vw;
     margin-top: 6%;
     padding-top: 1%;
+    padding-bottom: 3%;
 }
   
 .footer-nav {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 80%);
+    grid-template-rows: repeat(3, 120%);
     justify-content: space-around;
     align-items: center;
 }
@@ -192,10 +224,12 @@ a:hover {
 .header-links a {
     width: 12%;
     padding: .3%;
+    font-size: 1.5vw;
 }
 
 .footer-nav a {
-    padding: .6%;
+    font-size: 1.5vw;
+
 }
 
 
