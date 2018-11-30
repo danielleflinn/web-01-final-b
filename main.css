@@ -82,8 +82,8 @@ header p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 1.5%;
-    grid-row-gap: 1.5%;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 1.5vw;
     width: 95%;
     margin: 2.5%;
     text-transform: uppercase;
@@ -104,42 +104,42 @@ header p {
 }
   
 #galleryCell-2 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://scstylecaster.files.wordpress.com/2018/11/chris-pratt.jpg");
      background-size: cover;
 }
   
 #galleryCell-3 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("http://blogs-images.forbes.com/erikkain/files/2015/01/Chris-Pratt-e1422428534712.jpg");
      background-size: cover;
 }
   
 #galleryCell-4 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/bc-8714381777709190.original.jpg");
      background-size: cover;
 }
   
 #galleryCell-5 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/12/09/Pictures/actor-chris-pratt-arrives-movie-awards-burbank_b01c0cd4-dceb-11e7-ad52-47d546f3ccd3.jpg");
      background-size: cover;
 }
   
 #galleryCell-6 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://content.swncdn.com/godvine/pics/GV-Article/godupdates%20actor%20Chris%20Pratt%20shared%20his%20testimony%20finding%20god%20at%20grocery%20fb.jpg");
      background-size: cover;
 }
   
 #galleryCell-7 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://pluggedin.focusonthefamily.com/wp-content/uploads/2018/06/Blog-Top-6-20-18.png");
      background-size: cover;
 }
   
 #galleryCell-8 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://www.mensjournal.com/wp-content/uploads/mf/chris-pratt-main-1280.jpg");
      background-size: cover;
 }
   
 #galleryCell-9 {
-    background-image: url("https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2018-05/et_will_smith_divorce_rumors_052418.jpg?itok=xVmIVfpg&h=e16aad4d");
+    background-image: url("https://www.trainmag.com/wp-content/uploads/2017/04/wsi-imageoptim-Chris-Pratt.jpg");
      background-size: cover;
 }
   
@@ -194,7 +194,6 @@ footer {
     font-family: gotham-med;
     width: 100%;
     height: 18vw;
-    margin-top: 6%;
     padding-top: 1%;
     padding-bottom: 3%;
 }
@@ -203,7 +202,7 @@ footer {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 120%);
+    grid-template-rows: repeat(3, 7vw   );
     justify-content: space-around;
     align-items: center;
 }
@@ -229,7 +228,27 @@ a:hover {
 
 .footer-nav a {
     font-size: 1.5vw;
-
 }
 
 
+@media (max-width: 850px) {
+    #staffGallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #galleryCell-10 {
+        font-size: 3.6vw;
+        grid-column: 2;
+        grid-row: 5 / 7;
+    }
+
+    .galCell, .galCell-left {
+        height: 25vw;
+        font-size: 2vw;
+    }
+    #galleryCell-1 {
+        font-size: 3.95vw;
+    }
+      
+}
