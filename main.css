@@ -18,6 +18,12 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 3.7vw;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 /**** header and nav **********************/
 
 header {
@@ -46,10 +52,11 @@ header {
 .header-links {
     margin: 1%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70%;
     height: 8%;
 }
+
   
 #search {
     background-image: url("assets/search.png");
@@ -78,10 +85,10 @@ header p {
 
 /**** staff gallery **********************/
 
-#staffGallery {
+.grid-2by3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 1.5vw;
     grid-row-gap: 1.5vw;
     width: 95%;
@@ -99,7 +106,6 @@ header p {
     display: flex;
     grid-row: 1 / 3;
     align-items: center;
-    font-size: 2.5vw;
     padding: 15%;    
 }
   
@@ -146,9 +152,8 @@ header p {
 #galleryCell-10 {
     display: flex;
     grid-column: 3;
-    grid-row: 3 / 5;
+    grid-row: 1 / 3;
     align-items: center;
-    font-size: 2.3vw;
     padding: 15%;
 }
   
@@ -221,8 +226,8 @@ a:hover {
 }
 
 .header-links a {
-    width: 12%;
-    padding: .3%;
+    width: 17%;
+    padding-top: .5%;
     font-size: 1.5vw;
 }
 
@@ -230,25 +235,122 @@ a:hover {
     font-size: 1.5vw;
 }
 
+/***student page*********************/
+
+.colored-header {
+    color: rgb(241, 206, 91);
+}
+.student-grid {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    grid-column-gap: 1.5vw;
+    height: 25vw;
+    margin: 2.5%;
+}
+
+.article-content {
+    padding-top: 1.5vw;
+}
+
+.student-grid h2 {
+    font-family: gotham-med; 
+    font-size: 3vw;
+    line-height: 4.5vw;
+    margin-bottom: 0;
+}
+
+.student-grid h3 {
+    font-family: gotham-med; 
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 4vw;
+    margin: 0;
+}
+
+.student-grid p {
+    font-family: avenir-next;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.profile-img {
+    background-size: cover;
+    grid-column: 1 /span 2;
+}
+  
+#student-1 {
+    background-image: url("https://img.huffingtonpost.com/asset/586bf88f1900002a000e2b4d.jpeg?cache=xp5prt5ayh&ops=scalefit_720_noupscale");
+}
+  
+#student-2 {
+    background-image: url("http://tribzap2it.files.wordpress.com/2015/02/chris-pratt-johnny-karate.jpg?w=900&h=506");
+}
+  
+#student-3 {
+    background-image: url("https://imgix.bustle.com/2017/5/10/68d6dc75-afb3-4e50-8ccb-1db9f636649a.jpg");
+}
+  
+#student-4 {
+    background-image: url("https://i.pinimg.com/originals/64/09/1c/64091c358f5e7503f9c49571877506a5.png");
+     background-position: center;
+}
+
+#rec {
+    background-color:  rgb(241, 206, 91);
+    height: 1vw;
+    width: 100%;
+    margin: 10%;
+}
+
+#alumni-1 {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 3;
+    justify-content: center;
+    align-items: center;
+    padding: 15%; 
+}
+
+#alumni-2 {
+    background-image: url("http://static6.uk.businessinsider.com/image/5b5f4a5c7708e922dc53cb32/chris-pratt-zoe-saldana-and-other-guardians-of-the-galaxy-actors-ask-disney-to-rehire-james-gunn.jpg");
+    background-size: cover;
+}
+
+#alumni-3 {
+    background-image: url("https://medias.spotern.com/spots/w640/59179-1532336916.jpg");
+    background-size: cover;
+}
+
+#alumni-4 {
+    background-image: url("https://i.ytimg.com/vi/2ZoYoQip7aE/maxresdefault.jpg");
+    background-size: cover;
+}
+
+#alumni-5 {
+    background-image: url("https://cdnx.natalie.mu/media/news/eiga/2016/1215/magnificentseven_201612_02_fixw_730_hq.jpg");
+    background-size: cover;
+    
+}
 
 @media (max-width: 850px) {
-    #staffGallery {
+    .grid-2by3 {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     #galleryCell-10 {
-        font-size: 3.6vw;
         grid-column: 2;
-        grid-row: 5 / 7;
+        grid-row: 2 / 4;
     }
 
     .galCell, .galCell-left {
         height: 30vw;
         font-size: 2vw;
     }
-    #galleryCell-1 {
-        font-size: 3.95vw;
+
+    h2 {
+        font-size: 5.5vw;
     }
       
 }
+
